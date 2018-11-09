@@ -32,8 +32,8 @@ A document database implementation on AWS S3
     ]);
     
     // Find by id
-    $database->collection('my-collection')->find($uuid);
+    $document = $database->collection('my-collection')->find($uuid);
     
     // Delete by id
-    $database->collection('my-collection')->delete($uuid);
+    $result = $database->collection('my-collection')->delete($uuid);
   
