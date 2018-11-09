@@ -1,0 +1,34 @@
+{
+  "name": "astroanu/s3-db-php",
+  "description": "AWS S3 as a document database",
+  "keywords": [
+    "aws",
+    "amazon",
+    "s3",
+    "documentdb",
+    "db"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "aws/aws-sdk-php": "^3.71",
+    "ramsey/uuid": "^3.8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "astroanu\\S3DB\\": "src/"
+    },
+    "files": [
+      "tests/SetupTrait.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "astroanu",
+      "email": "astroanu2004@gmail.com"
+    }
+  ]
+}
